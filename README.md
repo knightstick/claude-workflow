@@ -39,6 +39,63 @@ When this workflow is complete, a solo developer should be able to:
 5. **Maintain consistent documentation** across all their projects
 6. **Feel confident** that they're following proven methodologies
 
+## Getting Started with a New Project
+
+### Quick Start (Current State)
+
+1. **Create your new project directory**:
+   ```bash
+   mkdir my-new-project
+   cd my-new-project
+   ```
+
+2. **Copy the workflow files**:
+   ```bash
+   # Copy core workflow files
+   cp /path/to/claude-workflow/onboarding/setup-script.md ./
+   cp /path/to/claude-workflow/phase-templates/walking-skeleton.md ./
+   cp /path/to/claude-workflow/human-validation-framework.md ./
+   cp /path/to/claude-workflow/design-principles.md ./
+   
+   # Create project-specific files
+   touch README.md
+   touch CLAUDE.md
+   touch phase-tracking.md
+   ```
+
+3. **Initialize with AI Assistant**:
+   - Open `setup-script.md` with your AI assistant (Claude Code, etc.)
+   - Follow the guided onboarding questions
+   - AI will help populate project-specific files
+
+4. **Start Walking Skeleton phase**:
+   - Follow `walking-skeleton.md` template
+   - Use AI questioning scripts to guide implementation
+   - Complete human validation at phase end
+
+### What Gets Copied to New Projects
+
+**Core Workflow Files** (copy these):
+- `onboarding/setup-script.md` - Initial project setup guidance
+- `phase-templates/walking-skeleton.md` - Walking Skeleton phase template
+- `human-validation-framework.md` - Phase validation tools
+- `design-principles.md` - Core methodology principles
+
+**Project-Specific Files** (AI helps create these):
+- `README.md` - Project overview and setup instructions
+- `CLAUDE.md` - AI assistant instructions for this specific project
+- `phase-tracking.md` - Track progress through workflow phases
+- `decisions.md` - Record key architectural and strategic decisions
+
+### Workflow Process
+
+1. **Problem Validation** (use onboarding script)
+2. **Walking Skeleton Phase** (minimal end-to-end implementation)
+3. **MVC Phases** (incremental feature development)
+4. **Human Validation** (at end of every phase)
+
+*Note: This is the current manual process. Future versions will include automated setup scripts and better tooling.*
+
 ## Key Innovations
 
 ### Phased Approach
