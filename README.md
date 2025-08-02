@@ -54,8 +54,11 @@ When this workflow is complete, a solo developer should be able to:
    # Copy core workflow files
    cp /path/to/claude-workflow/templates/CLAUDE.md ./
    cp /path/to/claude-workflow/human-validation-framework.md ./
+   cp /path/to/claude-workflow/phase-templates/problem-validation.md ./
+   cp /path/to/claude-workflow/phase-templates/solution-validation.md ./
    cp /path/to/claude-workflow/phase-templates/walking-skeleton.md ./
    cp /path/to/claude-workflow/phase-templates/mvc-phase.md ./
+   cp /path/to/claude-workflow/phase-templates/track-phase.md ./
    cp /path/to/claude-workflow/ai-scripts/walking-skeleton-questions.md ./
    
    # Copy tracking templates (customize these)
@@ -82,8 +85,11 @@ When this workflow is complete, a solo developer should be able to:
 
 **Core Workflow Files** (copy these):
 - `templates/CLAUDE.md` - AI assistant instructions (customize for your project)
+- `phase-templates/problem-validation.md` - Problem validation phase template
+- `phase-templates/solution-validation.md` - Solution validation phase template  
 - `phase-templates/walking-skeleton.md` - Walking Skeleton phase template
-- `phase-templates/mvc-phase.md` - MVC phase template for incremental features
+- `phase-templates/mvc-phase.md` - Incremental development template following MVC principles
+- `phase-templates/track-phase.md` - Track phase for measuring outcomes and success
 - `ai-scripts/walking-skeleton-questions.md` - Systematic AI questioning framework
 - `human-validation-framework.md` - Phase validation tools
 
@@ -98,10 +104,22 @@ When this workflow is complete, a solo developer should be able to:
 
 ### Workflow Process
 
-1. **Problem Validation** (use onboarding script)
-2. **Walking Skeleton Phase** (minimal end-to-end implementation)
-3. **MVC Phases** (incremental feature development)
-4. **Human Validation** (at end of every phase)
+**Validation Track:**
+1. **Problem Validation** - Validate the problem before building solutions
+2. **Solution Validation** - Validate solution approach and technical feasibility
+
+**Build Track:**
+3. **Walking Skeleton Phase** - Minimal end-to-end implementation and deployment
+4. **Incremental Development** - Following MVC (Minimal Viable Change) principles for feature development
+5. **Track Phase** - Measure outcomes and validate whether implementation delivers value
+
+**Throughout:** **Human Validation** at the end of every phase
+
+### Key Principles
+
+**MVC (Minimal Viable Change)**: The core ideology from GitLab that guides our entire approach. Rather than building large features, we make small, valuable changes that can be validated quickly. MVC is not a phase - it's the principle that shapes how we approach the Build Track.
+
+**Validation-First**: Following GitLab's methodology, we validate problems and solutions before building, reducing the risk of building the wrong thing.
 
 *Note: This is the current manual process. Future versions will include automated setup scripts and better tooling.*
 

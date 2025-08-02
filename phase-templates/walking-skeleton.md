@@ -6,7 +6,7 @@
 
 **Goal**: Create the smallest possible working system that exercises the full technology stack and can be deployed to production.
 
-**Duration**: 1-2 weeks (time-boxed)
+**Duration**: 2-4 hours (time-boxed)
 
 **Success Criteria**: 
 - Basic application structure exists and runs

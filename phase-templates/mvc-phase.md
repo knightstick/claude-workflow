@@ -1,12 +1,12 @@
-# MVC (Minimal Viable Change) Phase Template
+# Incremental Development Template
 
-*Add one small, valuable change to your existing Walking Skeleton.*
+*Following MVC (Minimal Viable Change) principles - add one small, valuable change to your existing Walking Skeleton.*
 
 ## Phase Overview
 
 **Goal**: Implement one minimal but meaningful improvement that adds user value while maintaining system stability.
 
-**Duration**: 1-2 weeks (time-boxed)
+**Duration**: 1-2 hours (time-boxed)
 
 **Prerequisites**: Completed Walking Skeleton with deployed, working system
 
@@ -20,9 +20,10 @@
 ## Research Foundation
 
 Based on **GitLab Product Development Flow research**:
+- **MVC Philosophy**: "Minimal Viable Change" - the ideology that drives GitLab's approach
 - "Build MVCs that improve Product KPIs and/or Engineering KPIs"
 - "If it fails to do so, abandon it and restart validation cycle"
-- Focus on minimal but viable changes rather than large features
+- MVC is the principle that guides the Build Track, not a separate phase
 
 Based on **Solo Developer Documentation Strategy research**:
 - Time-box each phase to manageable scope
