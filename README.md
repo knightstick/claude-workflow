@@ -52,40 +52,49 @@ When this workflow is complete, a solo developer should be able to:
 2. **Copy the workflow files**:
    ```bash
    # Copy core workflow files
-   cp /path/to/claude-workflow/onboarding/setup-script.md ./
-   cp /path/to/claude-workflow/phase-templates/walking-skeleton.md ./
+   cp /path/to/claude-workflow/templates/CLAUDE.md ./
    cp /path/to/claude-workflow/human-validation-framework.md ./
-   cp /path/to/claude-workflow/design-principles.md ./
+   cp /path/to/claude-workflow/phase-templates/walking-skeleton.md ./
+   cp /path/to/claude-workflow/phase-templates/mvc-phase.md ./
+   cp /path/to/claude-workflow/ai-scripts/walking-skeleton-questions.md ./
    
-   # Create project-specific files
+   # Copy tracking templates (customize these)
+   cp /path/to/claude-workflow/templates/phase-tracking.md ./
+   cp /path/to/claude-workflow/templates/progress-log.md ./
+   cp /path/to/claude-workflow/templates/decision-record.md ./decisions/
+   
+   # Create other project files
+   mkdir decisions
    touch README.md
-   touch CLAUDE.md
-   touch phase-tracking.md
    ```
 
-3. **Initialize with AI Assistant**:
-   - Open `setup-script.md` with your AI assistant (Claude Code, etc.)
-   - Follow the guided onboarding questions
-   - AI will help populate project-specific files
+3. **Customize for your project**:
+   - Edit `CLAUDE.md` to update project type, tech stack, and current phase
+   - Update the project-specific context sections
+   - Set your problem statement and success criteria
 
-4. **Start Walking Skeleton phase**:
-   - Follow `walking-skeleton.md` template
-   - Use AI questioning scripts to guide implementation
-   - Complete human validation at phase end
+4. **Start development with AI**:
+   - Claude will automatically understand the workflow from your `CLAUDE.md`
+   - Begin with Walking Skeleton phase using the systematic questioning
+   - Complete human validation at the end of each phase
 
 ### What Gets Copied to New Projects
 
 **Core Workflow Files** (copy these):
-- `onboarding/setup-script.md` - Initial project setup guidance
+- `templates/CLAUDE.md` - AI assistant instructions (customize for your project)
 - `phase-templates/walking-skeleton.md` - Walking Skeleton phase template
+- `phase-templates/mvc-phase.md` - MVC phase template for incremental features
+- `ai-scripts/walking-skeleton-questions.md` - Systematic AI questioning framework
 - `human-validation-framework.md` - Phase validation tools
-- `design-principles.md` - Core methodology principles
 
-**Project-Specific Files** (AI helps create these):
+**Project Tracking Templates** (copy and customize):
+- `templates/phase-tracking.md` - Track progress through workflow phases
+- `templates/progress-log.md` - Daily/weekly progress documentation
+- `templates/decision-record.md` - Document important project decisions
+
+**Project-Specific Files** (you create these):
 - `README.md` - Project overview and setup instructions
-- `CLAUDE.md` - AI assistant instructions for this specific project
-- `phase-tracking.md` - Track progress through workflow phases
-- `decisions.md` - Record key architectural and strategic decisions
+- `decisions/` - Directory for decision records using the template
 
 ### Workflow Process
 
